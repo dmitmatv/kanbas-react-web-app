@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ProfileEdit+</title>
+  <link href="../../lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../../lib/@fortawesome/fontawesome-free/css/all.css" rel="stylesheet"/>
+  <style>
+    .save-profile-button {
+      background-color: red;
+    }
+    .add-margin {
+      margin-left: 10px;
+    }
+    .compact-input {
+      width: 70%;
+    }
+  </style>
+</head>
+<body>
+
+<div>
+<div class="container mt-4">
+  <i class="fas fa-user fa-8x profile-icon"></i>
+  <div style="float: right;">
+    <button class="btn btn-secondary add-margin " formaction="index.html"><i class="fas fa-pencil-alt"></i> Edit Profile</button>
+    <button class="btn btn-secondary add-margin" formaction="index.html">Cancel Editing</button>
+  </div>
+  <h2>Jose Annunziato</h2>
+  <div class="mb-3">
+    <label for="name" class="form-label">Name:*</label>
+    <input id="name" class="form-control compact-input" value="Jose Annunziato"/>
+  </div>
+  <div class="mb-3">
+    <label for="pro" class="form-label">Pronouns:</label></br>
+    <select id="pro" class="form-select compact-input">
+      <option>None</option>
+    </select>
+  </div>
+  <div class="mb-3">
+    <label for="title" class="form-label">Title:</label>
+    <input id="title" class="form-control compact-input"/>
+  </div>
+  <h4>Contact</h4>
+  <p>No registered services, you can add some on the <a href="#">settings</a> page.</p>
+  <h4>Contact</h4>
+  <p>No registered services, you can add some on the <a href="#">settings</a> page.</p>
+  <h4>Biography</h4>
+  <textarea class="form-control compact-input" cols="30" rows="10">
+        Faculty, Software Engineer, AI, Space, and renewables enthusiast.
+  </textarea>
+  <h4>Links</h4>
+  <div class="row">
+    <div class="col-xs-4">
+      <div class="mb-3">
+        <label for="link-title" class="form-label">Title:</label>
+        <input id="link-title" class="form-control compact-input" value="YouTube"/>
+      </div>
+    </div>
+    <div class="col-xs-4">
+      <div class="mb-3">
+        <label for="link-url" class="form-label">URL:</label>
+        <input id="link-url" class="form-control compact-input" value="https://www.youtube.com/@WebDevTV"/>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container mt-4">
+  <div class="row">
+    <div class="col">
+      <button class="btn btn-secondary add-margin" formaction="index.html">Cancel</button>
+      <button class="btn btn-danger save-profile-button add-margin" formaction="index.html">Save Profile</button>
+    </div>
+  </div>
+</div>
+</div>
+
+
+</body>
+</html>

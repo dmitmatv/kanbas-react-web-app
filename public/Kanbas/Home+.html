@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home+</title>
+  <link href="../lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../lib/@fortawesome/fontawesome-free/css/all.css" rel="stylesheet"/>
+  <style>
+    .breadcrumb-item+.breadcrumb-item::before {
+      content: " > ";
+    }
+  </style>
+</head>
+<body>
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item">Course Name, Term, Section </li>
+    <li class="breadcrumb-item active" aria-current="page">Home</li>
+  </ol>
+</nav>
+
+<div class="container " style="float: right; margin-bottom: 5px;">
+  <button class="btn btn-secondary ">Collapse All</button>
+  <button class="btn btn-secondary ">View Progress</button>
+    <select class="dropdown ">
+      <option  class="dropdown-item">Publish All</option>
+      <option  class="dropdown-item">Publish all items and modules</option>
+      <option  class="dropdown-item">UnPublish</option>
+    </select>
+  <button class="btn btn-danger ">+ Module</button>
+</div>
+
+<div class="container mt-4">
+  <div class="row">
+    <div class="col-md-6">
+      <ul class="list-group list-group-flush">
+
+        <li class="list-group-item">Week 0 - Intro</li>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item list-group-item-secondary">LEARNING OBJECTIVES</li>
+          <li class="list-group-item ">Introduction to the course</li>
+          <li class="list-group-item">Learn what is Web Development</li>
+          <li class="list-group-item">Creating a development environment</li>
+          <li class="list-group-item">Creating a Web Application</li>
+          <li class="list-group-item">Getting started with the 1st assignment</li>
+
+        <li class="list-group-item">READING</li>
+
+          <li class="list-group-item">Full Stack Developer - Chapter 1 - Introduction</li>
+          <li class="list-group-item">Full Stack Developer - Chapter 2 - Creating User Interfaces With HTML</li>
+
+        <li class="list-group-item">SLIDES</li>
+
+          <li class="list-group-item"><a href="#" class="text-danger">Introduction to Web Development</a></li>
+          <li class="list-group-item"><a href="#" class="text-danger">Creating an HTTP server with Node.js</a></li>
+          <li class="list-group-item"><a href="#" class="text-danger">Creating a React Application</a></li>
+        </ul>
+        </li>
+        <li class="list-group-item">Week 1 - HTML</li>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item list-group-item-secondary">LEARNING OBJECTIVES</li>
+          <li class="list-group-item">Learn how to create user interfaces with HTML</li>
+          <li class="list-group-item">Keep working on assignment 1</li>
+          <li class="list-group-item">Deploy the assignment to Netlify</li>
+
+        <li class="list-group-item">READING</li>
+
+          <li class="list-group-item">Full Stack Developer - Chapter 1 - Introduction</li>
+          <li class="list-group-item">Full Stack Developer - Chapter 2 - Creating User Interfaces With HTML</li>
+        </ul>
+      </ul>
+    </div>
+    <div class="col-md-6">
+      <h1>Course Status</h1>
+      <button class="btn btn-secondary float-end">UnPublish</button>
+      <button class="btn btn-success float-end"><i class="fas fa-check"></i> Published</button>
+      <ul class="list-unstyled mt-3">
+        <li><a href="#" class="text-danger">Import Existing Content</a></li>
+        <li><a href="#" class="text-danger">Import From Commons</a></li>
+        <li><a href="#" class="text-danger">Choose Home Page</a></li>
+        <li><a href="#" class="text-danger">View Course Stream</a></li>
+        <li><a href="#" class="text-danger">New Announcement</a></li>
+        <li><a href="#" class="text-danger">New Analytics</a></li>
+        <li><a href="#" class="text-danger">View Course Notifications</a></li>
+      </ul>
+      <h1>Coming Up</h1>
+      <a href="#" class="text-danger float-end">View Calendar</a>
+      <ul class="list-unstyled mt-3">
+        <li><a href="#" class="text-danger">Lecture CS4550.12631.202410 Sep 7 at 11:45am</a></li>
+        <li><a href="#" class="text-danger">Lecture CS4550.12631.202410 Sep 11 at 11:45am</a></li>
+        <li><a href="#" class="text-danger">CS5610 06 SP23 Lecture Sep 11 at 6pm</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>
