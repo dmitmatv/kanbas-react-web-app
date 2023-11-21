@@ -8241,7 +8241,7 @@ cash-register:
       - pay
       - payment
       - purchase
-      - store
+      - index
   unicode: f788
   voted: true
 cat:
@@ -39377,7 +39377,7 @@ shoe-prints:
 shop:
   aliases:
     names:
-      - store-alt
+      - index-alt
     unicodes:
       secondary:
         - 10f54f
@@ -39404,7 +39404,7 @@ shop:
       - market
       - purchase
       - shopping
-      - store
+      - index
   unicode: f54f
   voted: true
 shop-lock:
@@ -39435,13 +39435,13 @@ shop-lock:
       - quarantine
       - shop
       - shopping
-      - store
+      - index
   unicode: e4a5
   voted: false
 shop-slash:
   aliases:
     names:
-      - store-alt-slash
+      - index-alt-slash
     unicodes:
       secondary:
         - '10e070'
@@ -43059,7 +43059,7 @@ store:
       - market
       - purchase
       - shopping
-      - store
+      - index
   unicode: f54e
   voted: true
 store-slash:
