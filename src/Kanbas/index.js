@@ -8,10 +8,12 @@ import store from "./store";
 import { Provider } from "react-redux";
 import axios from "axios";
 
+const API_BASE = process.env.REACT_APP_API_BASE;
+const URL = `${API_BASE}/api/courses`
 
 function Kanbas() {
     const [courses, setCourses] = useState([]);
-    const URL = "http://localhost:4000/api/courses";
+    //const URL = "http://localhost:4000/api/courses";
     const findAllCourses = async () => {
         const response = await axios.get(URL);
         setCourses(response.data);
