@@ -19,7 +19,7 @@ function Account() {
     };
     const signout = async () => {
         await client.signout();
-        navigate("/signin");
+        navigate("/Kanbas/signin");
     };
 
 
@@ -36,35 +36,47 @@ function Account() {
             <h1>Account</h1>
             {account && (
                 <div>
-                    <input value={account.password}
+                    <label for = "pas"> Password: </label>
+                    <input id = "pas" value={account.password}
                            onChange={(e) => setAccount({ ...account,
                                                            password: e.target.value })}/>
-                    <input value={account.firstName}
+                    <br/>
+                    <label htmlFor="fN"> First Name: </label>
+                    <input id = "fN" value={account.firstName}
                            onChange={(e) => setAccount({ ...account,
                                                            firstName: e.target.value })}/>
-                    <input value={account.lastName}
+                    <br/>
+                    <label htmlFor="lN"> Last Name: </label>
+                    <input id = "lN" value={account.lastName}
                            onChange={(e) => setAccount({ ...account,
                                                            lastName: e.target.value })}/>
-                    <input value={account.dob}
+                    <br/>
+                    <label htmlFor="dob"> DoB: </label>
+                    <input id = "dob" value={account.dob}
                            onChange={(e) => setAccount({ ...account,
                                                            dob: e.target.value })}/>
-                    <input value={account.email}
+                    <br/>
+                    <label htmlFor="em"> Email: </label>
+                    <input id = "em" value={account.email}
                            onChange={(e) => setAccount({ ...account,
                                                            email: e.target.value })}/>
-                    <select onChange={(e) => setAccount({ ...account,
+                    <br/>
+                    <label htmlFor="r"> Role: </label>
+                    <select id="r" onChange={(e) => setAccount({ ...account,
                                                             role: e.target.value })}>
                         <option value="USER">User</option>
                         <option value="ADMIN">Admin</option>
                         <option value="FACULTY">Faculty</option>
                         <option value="STUDENT">Student</option>
                     </select>
+                    <br/>
                     <button onClick={save}>
                         Save
                     </button>
                     <button onClick={signout}>
                         Signout
                     </button>
-                    <Link to="/users" className="btn btn-warning w-100">
+                    <Link to="/Kanbas/users" className="btn btn-warning w-100">
                         Users
                     </Link>
 

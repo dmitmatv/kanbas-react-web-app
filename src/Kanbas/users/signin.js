@@ -5,8 +5,9 @@ function Signin() {
     const [credentials, setCredentials] = useState({ username: "", password: "" });
     const navigate = useNavigate();
     const signin = async () => {
-        await client.signin(credentials);
-        navigate("/account");
+        const data = await client.signin(credentials);
+        //console.log(data)
+        navigate("/Kanbas/account");
     };
     return (
         <div>

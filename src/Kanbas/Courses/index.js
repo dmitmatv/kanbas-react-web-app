@@ -11,7 +11,7 @@ import axios from "axios";
 
 
 const API_BASE = process.env.REACT_APP_API_BASE;
-const URL = `${API_BASE}/api/courses`
+const URL = `${API_BASE}/courses`
 
 function Courses() {
     const { courseId } = useParams();

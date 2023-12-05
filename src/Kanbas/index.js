@@ -15,7 +15,7 @@ import Signup from "./users/signup";
 
 
 const API_BASE = process.env.REACT_APP_API_BASE;
-const URL = `${API_BASE}/api/courses`
+const URL = `${API_BASE}/courses`
 
 function Kanbas() {
     const [courses, setCourses] = useState([]);
@@ -72,7 +72,7 @@ function Kanbas() {
             <div>
                 <Routes>
                     <Route path="/" element={<Navigate to="Dashboard" />} />
-                    <Route path="Account" element={<h1>Account</h1>} />
+                    <Route path="account" element={<Account/>} />
                     <Route path="Dashboard" element={<Dashboard
                         courses={courses}
                         course={course}
@@ -82,11 +82,12 @@ function Kanbas() {
                         updateCourse={updateCourse}/>
                     } />
                     <Route path="Courses/:courseId/*" element={<Courses courses={courses} />} />
-                    <Route path="/signin" element={<Signin />} />
-                    <Route path="/signup" element={<Signup />} />
-                    <Route path="/account" element={<Account />} />
-                    <Route path="/admin/users" element={<UserTable />} />
-                    <Route path="/account/:id" element={<Account />} />
+
+                    <Route path="signin" element={<Signin />} />
+                    <Route path="signup" element={<Signup />} />
+                    <Route path="account" element={<Account />}/>
+                    <Route path="users" element={<UserTable />} />
+                    <Route path="account/:id" element={<Account />} />
 
                 </Routes>
             </div>
