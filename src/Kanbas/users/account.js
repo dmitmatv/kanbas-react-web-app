@@ -19,7 +19,7 @@ function Account() {
     };
     const signout = async () => {
         await client.signout();
-        navigate("/project/signin");
+        navigate("/signin");
     };
 
 
@@ -64,7 +64,7 @@ function Account() {
                     <button onClick={signout}>
                         Signout
                     </button>
-                    <Link to="/project/admin/users" className="btn btn-warning w-100">
+                    <Link to="/users" className="btn btn-warning w-100">
                         Users
                     </Link>
 
